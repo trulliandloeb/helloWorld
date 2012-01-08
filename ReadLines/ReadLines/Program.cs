@@ -13,7 +13,7 @@ namespace ReadLines
             var path = args[0];
             var keyword = args[1];
             var lines = File.ReadLines(path);
-            var result = lines.Where(line => line.ToLower().Contains(keyword));
+            var result = lines.Where(line => line.ToLower().Contains(keyword)).AsParallel();
             foreach (var item in result)
             {
                 Console.WriteLine(item);
