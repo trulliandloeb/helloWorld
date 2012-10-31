@@ -2,18 +2,19 @@
 layout: default
 title: just a test
 ---
-    
+
     <div id="container">
       <div class="inner">
+
         <header>
-          <h1>First</h1>
+          <h2>{{ page.title }}</h>
         </header>
+        <hr>
         <section id="main_content">
-          <h2>{{ page.title }}</h2>
 
 <p>我的第一篇文章</p>
 <p>{{ page.date | date_to_string }}</p>
-</section>
-</div>
+<h3>GitHub</h3>
+  </section>        
       </div>
     </div>
